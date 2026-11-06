@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ЗАГЛУШКА: заголовок вкладки браузера и описание для поисковых систем -->
+  <title>Имя автора — книга и трактат</title>
+  <meta name="description" content="Описание сайта для поисковых систем — заглушка.">
+
+  <!-- МАКЕТ: страница закрыта от поисковых систем. Удалите эту строку только при запуске сайта. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F7F2EA">
+
+  <link rel="preload" href="assets/fonts/cormorant-garamond/cormorant-garamond-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/source-sans-3/source-sans-3-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script>
+    /* Пока файла изображения нет в папке, вместо «битой» картинки показываем заглушку. */
+    document.documentElement.className = "js";
+    document.addEventListener("error", function (event) {
+      var slot = event.target.closest && event.target.closest("[data-slot]");
+      if (slot) slot.classList.add("is-empty");
+    }, true);
+  </script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <!-- =========================================================
+       1. ВЕРХНЯЯ ПАНЕЛЬ: логотип, разделы, «Купить книгу»
+       ========================================================= -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top">
+        <img class="brand__logo" src="assets/logo/logo-black.webp" width="997" height="1259" alt="Логотип — в начало страницы">
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Разделы страницы" data-nav>
+        <ul class="site-nav__list">
+          <li><a href="#book">О книге</a></li>
+          <li><a href="#treatise">Трактат</a></li>
+          <li><a href="#author">Об авторе</a></li>
+          <li><a href="#community">Сообщества</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ведёт к блоку «О книге», где цена и кнопка оплаты -->
+      <a class="btn btn--primary btn--sm site-header__cta" href="#book">Купить книгу</a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="visually-hidden" data-nav-toggle-label>Открыть меню</span>
+        <span class="nav-toggle__bar nav-toggle__bar--top" aria-hidden="true"></span>
+        <span class="nav-toggle__bar nav-toggle__bar--bottom" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- =========================================================
+         2. ПЕРВЫЙ ЭКРАН
+         ========================================================= -->
+    <section class="hero" aria-labelledby="hero-title" data-hero>
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <!-- ЗАГЛУШКА: имя автора -->
+          <p class="hero__author"><span class="ph">Имя автора</span></p>
+
+          <!-- ЗАГЛУШКА: краткий заголовок -->
+          <h1 class="hero__title" id="hero-title"><span class="ph">Краткий заголовок первого экрана</span></h1>
+
+          <!-- ЗАГЛУШКА: подзаголовок -->
+          <p class="hero__lead"><span class="ph">Подзаголовок: одна-две фразы о&nbsp;книге и&nbsp;трактате. Сейчас здесь заглушка&nbsp;— замените её&nbsp;своим текстом.</span></p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#book">О книге</a>
+            <a class="btn btn--ghost" href="#treatise">Скачать трактат</a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <!-- Логотип: пропорции сохраняются автоматически. Чтобы показать здесь обложку,
+               замените путь на assets/book/cover.jpg -->
+          <img class="hero__logo" src="assets/logo/logo-black.webp" width="997" height="1259" alt="Логотип">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         3. О КНИГЕ
+         ========================================================= -->
+    <section class="section section--after-hero" id="book" aria-labelledby="book-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num" aria-hidden="true">I</span>
+          <h2 class="section-head__title" id="book-heading">О книге</h2>
+        </div>
+
+        <div class="split">
+          <div class="split__media">
+            <!-- ЗАГЛУШКА: обложка. Сохраните файл как assets/book/cover.jpg —
+                 он появится здесь сам, без правки кода. -->
+            <div class="slot slot--cover slot--raised" data-slot>
+              <img src="assets/book/cover.jpg" width="1200" height="1800" alt="Обложка книги">
+              <div class="slot__ph" aria-hidden="true">
+                <span class="slot__title">Обложка книги</span>
+                <span class="slot__meta">Пропорции 2&nbsp;:&nbsp;3, от&nbsp;1200&nbsp;×&nbsp;1800&nbsp;px</span>
+                <code class="slot__path">assets/book/cover.jpg</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="split__body">
+            <!-- ЗАГЛУШКА: название книги -->
+            <h3 class="title"><span class="ph">Название книги</span></h3>
+
+            <!-- ЗАГЛУШКА: описание книги -->
+            <div class="prose ph-block">
+              <p>Описание книги&nbsp;— два-три абзаца: о&nbsp;чём она и&nbsp;кому адресована. Этот абзац показывает, сколько места займёт текст.</p>
+              <p>Второй абзац описания. Всё, что отмечено золотистым пунктиром,&nbsp;— заглушки: их&nbsp;нужно заменить настоящим текстом.</p>
+            </div>
+
+            <div class="purchase">
+              <div class="purchase__price">
+                <span class="purchase__label">Цена</span>
+                <!-- ЗАГЛУШКА: цена и валюта -->
+                <span class="purchase__value"><span class="ph">Цена и валюта</span></span>
+              </div>
+
+              <!-- ЗАГЛУШКА: ссылка на оплату. Замените href="#book" на адрес страницы оплаты
+                   и удалите атрибут data-placeholder. -->
+              <a class="btn btn--primary btn--lg" href="#book" data-placeholder="Заглушка: оплата пока не подключена — ссылку добавим позже.">Купить книгу</a>
+
+              <p class="purchase__note ph-note">Ссылка на оплату будет добавлена позже.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         4. ТРАКТАТ
+         ========================================================= -->
+    <section class="section section--band" id="treatise" aria-labelledby="treatise-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num" aria-hidden="true">II</span>
+          <h2 class="section-head__title" id="treatise-heading">Трактат</h2>
+        </div>
+
+        <div class="split split--text-first">
+          <div class="split__body">
+            <!-- ЗАГЛУШКА: название трактата -->
+            <h3 class="title"><span class="ph">Название трактата</span></h3>
+
+            <!-- ЗАГЛУШКА: описание трактата -->
+            <div class="prose ph-block">
+              <p>Описание трактата&nbsp;— один-два абзаца о&nbsp;его содержании. Сейчас это заглушка, её&nbsp;нужно заменить вашим текстом.</p>
+            </div>
+
+            <div class="file-card">
+              <svg class="file-card__icon" viewBox="0 0 40 48" aria-hidden="true" focusable="false">
+                <path d="M6 1.5h19.5L38.5 14.5V44a2.5 2.5 0 0 1-2.5 2.5H6A2.5 2.5 0 0 1 3.5 44V4A2.5 2.5 0 0 1 6 1.5Z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M25.5 1.5V12a2.5 2.5 0 0 0 2.5 2.5h10.5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10 24h20M10 30h20M10 36h13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <div>
+                <p class="file-card__name">Файл трактата</p>
+                <!-- ЗАГЛУШКА: формат и размер файла -->
+                <p class="file-card__meta"><span class="ph">Формат и размер файла</span></p>
+              </div>
+            </div>
+
+            <div class="actions">
+              <!-- ЗАГЛУШКА: ссылка на скачивание. Когда файл будет в папке assets/treatise/,
+                   замените href="#treatise" на путь к файлу, добавьте атрибут download
+                   и удалите data-placeholder. -->
+              <a class="btn btn--primary btn--lg" href="#treatise" data-placeholder="Заглушка: файл трактата ещё не добавлен.">Скачать трактат</a>
+              <p class="ph-note">Ссылка на скачивание появится после загрузки файла.</p>
+            </div>
+          </div>
+
+          <div class="split__media">
+            <!-- ЗАГЛУШКА: обложка или первая страница трактата. Сохраните файл как
+                 assets/treatise/cover.jpg — он появится здесь сам. -->
+            <div class="sheet">
+              <div class="slot slot--sheet" data-slot>
+                <img src="assets/treatise/cover.jpg" width="1240" height="1754" alt="Обложка трактата">
+                <div class="slot__ph" aria-hidden="true">
+                  <span class="slot__title">Обложка или первая страница трактата</span>
+                  <span class="slot__meta">Формат A4 (1&nbsp;:&nbsp;1,41), от&nbsp;1240&nbsp;×&nbsp;1754&nbsp;px</span>
+                  <code class="slot__path">assets/treatise/cover.jpg</code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         5. ОБ АВТОРЕ
+         ========================================================= -->
+    <section class="section" id="author" aria-labelledby="author-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num" aria-hidden="true">III</span>
+          <h2 class="section-head__title" id="author-heading">Об авторе</h2>
+        </div>
+
+        <div class="split">
+          <div class="split__media">
+            <!-- ЗАГЛУШКА: фотография. Сохраните файл как assets/author/photo.jpg —
+                 он появится здесь сам. -->
+            <div class="slot slot--portrait" data-slot>
+              <img src="assets/author/photo.jpg" width="1200" height="1500" alt="Фотография автора">
+              <div class="slot__ph" aria-hidden="true">
+                <span class="slot__title">Фотография автора</span>
+                <span class="slot__meta">Портрет 4&nbsp;:&nbsp;5, от&nbsp;1200&nbsp;×&nbsp;1500&nbsp;px</span>
+                <code class="slot__path">assets/author/photo.jpg</code>
+              </div>
+            </div>
+          </div>
+
+          <div class="split__body">
+            <!-- ЗАГЛУШКА: имя автора -->
+            <h3 class="title"><span class="ph">Имя автора</span></h3>
+
+            <!-- ЗАГЛУШКА: краткая биография -->
+            <div class="prose ph-block">
+              <p>Краткая биография&nbsp;— три-пять предложений. Здесь будет только то, что вы&nbsp;сами захотите о&nbsp;себе рассказать.</p>
+              <p>Второй абзац&nbsp;— по&nbsp;желанию. Сейчас это заглушка.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================================================
+         6. СООБЩЕСТВА И СОЦСЕТИ
+         Каждая карточка — отдельная ссылка. Лишние карточки можно удалить,
+         недостающие — добавить копированием блока <li>…</li>.
+         ========================================================= -->
+    <section class="section section--follow" id="community" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-head__num" aria-hidden="true">IV</span>
+          <h2 class="section-head__title" id="community-heading">Сообщества и&nbsp;соцсети</h2>
+        </div>
+
+        <!-- ЗАГЛУШКА: короткая подводка (по желанию) -->
+        <div class="community__intro ph-block">
+          <p>Короткая подводка к&nbsp;ссылкам&nbsp;— по&nbsp;желанию. Сейчас это заглушка.</p>
+        </div>
+
+        <ul class="links-grid">
+          <li>
+            <!-- ЗАГЛУШКА: название и адрес. Замените href="#community" на адрес страницы
+                 и удалите data-placeholder. -->
+            <a class="link-card" href="#community" data-placeholder="Заглушка: ссылка на соцсеть ещё не добавлена.">
+              <span class="link-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="link-card__text">
+                <span class="link-card__name"><span class="ph">Название соцсети&nbsp;1</span></span>
+                <span class="link-card__url"><span class="ph">Ссылка (URL)</span></span>
+              </span>
+              <span class="link-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-card" href="#community" data-placeholder="Заглушка: ссылка на соцсеть ещё не добавлена.">
+              <span class="link-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="link-card__text">
+                <span class="link-card__name"><span class="ph">Название соцсети&nbsp;2</span></span>
+                <span class="link-card__url"><span class="ph">Ссылка (URL)</span></span>
+              </span>
+              <span class="link-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-card" href="#community" data-placeholder="Заглушка: ссылка на сообщество ещё не добавлена.">
+              <span class="link-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="link-card__text">
+                <span class="link-card__name"><span class="ph">Название сообщества&nbsp;1</span></span>
+                <span class="link-card__url"><span class="ph">Ссылка (URL)</span></span>
+              </span>
+              <span class="link-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li>
+            <a class="link-card" href="#community" data-placeholder="Заглушка: ссылка на сообщество ещё не добавлена.">
+              <span class="link-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false"><path d="M10 14a4.5 4.5 0 0 0 6.4 0l3-3a4.5 4.5 0 0 0-6.4-6.4l-1 1M14 10a4.5 4.5 0 0 0-6.4 0l-3 3a4.5 4.5 0 0 0 6.4 6.4l1-1" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </span>
+              <span class="link-card__text">
+                <span class="link-card__name"><span class="ph">Название сообщества&nbsp;2</span></span>
+                <span class="link-card__url"><span class="ph">Ссылка (URL)</span></span>
+              </span>
+              <span class="link-card__arrow" aria-hidden="true">↗</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- =========================================================
+       7. ПОДВАЛ: контакты и соцсети
+       Золотой логотип используется только здесь, на тёмном фоне.
+       ========================================================= -->
+  <footer class="site-footer" id="contacts" aria-labelledby="contacts-heading">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img class="footer-brand__logo" src="assets/logo/logo-gold.webp" width="815" height="1028" alt="Логотип">
+          <!-- ЗАГЛУШКА: имя автора -->
+          <p class="footer-brand__name"><span class="ph">Имя автора</span></p>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title" id="contacts-heading">Контакты</h2>
+          <ul class="footer-list">
+            <li>
+              <span class="footer-label">Электронная почта</span>
+              <!-- ЗАГЛУШКА: адрес почты. Пример ссылки: href="mailto:имя@домен" -->
+              <a href="#contacts" data-placeholder="Заглушка: адрес почты ещё не добавлен."><span class="ph">адрес почты</span></a>
+            </li>
+            <li>
+              <span class="footer-label">Другой способ связи</span>
+              <!-- ЗАГЛУШКА: телефон, мессенджер или убрать строку -->
+              <span class="ph">по желанию</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Соцсети</h2>
+          <ul class="footer-list">
+            <!-- ЗАГЛУШКИ: те же ссылки, что в блоке «Сообщества и соцсети» -->
+            <li><a href="#contacts" data-placeholder="Заглушка: ссылка на соцсеть ещё не добавлена."><span class="ph">Соцсеть&nbsp;1</span></a></li>
+            <li><a href="#contacts" data-placeholder="Заглушка: ссылка на соцсеть ещё не добавлена."><span class="ph">Соцсеть&nbsp;2</span></a></li>
+            <li><a href="#contacts" data-placeholder="Заглушка: ссылка на сообщество ещё не добавлена."><span class="ph">Сообщество&nbsp;1</span></a></li>
+            <li><a href="#contacts" data-placeholder="Заглушка: ссылка на сообщество ещё не добавлена."><span class="ph">Сообщество&nbsp;2</span></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h2 class="footer-title">Разделы</h2>
+          <ul class="footer-list">
+            <li><a href="#book">О книге</a></li>
+            <li><a href="#treatise">Трактат</a></li>
+            <li><a href="#author">Об авторе</a></li>
+            <li><a href="#community">Сообщества и&nbsp;соцсети</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <!-- ЗАГЛУШКА: имя автора; год подставляется автоматически -->
+        <p>© <span data-year>2026</span> · <span class="ph">Имя автора</span></p>
+        <a class="footer-bottom__top" href="#top">Наверх ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Подсказка для ссылок-заглушек (только для макета) -->
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
